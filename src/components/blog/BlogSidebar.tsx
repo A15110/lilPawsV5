@@ -4,6 +4,7 @@ import { usePopularPosts } from '../../hooks/usePopularPosts';
 import { useSubscribe } from '../../hooks/useSubscribe';
 import { blogPosts } from '../../data/blogPosts';
 
+
 interface BlogSidebarProps {
   currentPostId: string;
 }
@@ -87,7 +88,7 @@ export default function BlogSidebar({ currentPostId }: BlogSidebarProps) {
         </div>
       </div>
 
-      {/* Newsletter Signup */}
+      {/* Newsletter Signup 
       <div className="bg-gray-50 p-6 rounded-xl">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
           Stay Updated
@@ -124,7 +125,8 @@ export default function BlogSidebar({ currentPostId }: BlogSidebarProps) {
             {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
           </button>
         </form>
-      </div>
+      </div> */}
+       
     </aside>
   );
 }
